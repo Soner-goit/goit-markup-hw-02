@@ -1,4 +1,4 @@
-/*General Settings */
+/* General Settings */
 
 body {
     background-color: #FFFFFF;
@@ -6,10 +6,10 @@ body {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing:2%;
+    letter-spacing: 2%;
 }
 
-p{
+p {
     letter-spacing: 0.02em;
 }
 
@@ -50,42 +50,29 @@ h3 {
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
-.address{
+
+.address {
     font-style: normal;
 }
 
 .link {
     font-family: inherit;
-    color: #404bbf;
+    color: #2e2f42; /* Removed duplicate color definition */
     font-size: inherit;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     text-decoration: underline;
 }
 
-.link:hover {
+.link:hover, .link:focus {
     color: #404BBF;
 }
 
-.link:focus {
-    color: #404BBF;
+.page-nav ul li .link {
+    color: #434455;
 }
 
-.page-nav ul li .link:hover {
-    color: #404bbf;
-}
-
-.page-nav ul li .link:focus {
-    color: #404bbf;
-}
-
-.page-nav ul li .link{
-    color:#434455;
-}
-
-
-.page-nav a:focus{
+.page-nav a:focus {
     background-color: #404bbf;
 }
 
@@ -120,12 +107,14 @@ footer {
     background-color: #F4F4FD; 
 }
 
-
-
 .section-our-team ul li {
     background-color: white;
-    
-    .section-our-team h2 {
+    padding: 15px; /* Added padding for spacing */
+    margin: 10px 0; /* Added margin for separation */
+    border-radius: 8px; /* Optional: added border radius for a smoother design */
+}
+
+.section-our-team h2 {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 2%;
@@ -153,7 +142,7 @@ footer {
 }
 
 .span {
-    color: #2e2f42
+    color: #2e2f42;
 }
 
 .footer-span {
