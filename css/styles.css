@@ -1,12 +1,36 @@
-/* General Settings */
-**,
+/* Genel Ayarlar */
+*,
 *::after,
-*::before{
-box-sizing: border-box;
+*::before {
+    box-sizing: border-box;
 }
+
 ul, ol {
     list-style-type: none;
-    margin:0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: inherit; /* Linklerin varsayılan rengini almasını sağlar */
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Genel Ayarlar */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
@@ -14,12 +38,14 @@ a {
     text-decoration: none;
     font-style: normal;
 }
-    img {
+
+img {
     display: block;
     height: auto;
     max-width: 100%;
 }
 
+/* Body Ayarları */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 24px;
@@ -28,14 +54,19 @@ body {
     background-color: #FFFFFF;
     min-height: 100vh;
 }
+
 h1, h2, h3, h4, h5, h6, p {
-    margin:0;
+    margin: 0;
 }
-.container{
-    width: 1158px;
-    padding:0 15px ;
+
+/* Container */
+.container-header {
+    max-width: 1158px; /* Maksimum genişlik */
+    width: 100%;      /* Ekrana uyum sağlasın */
+    padding: 0 15px;
     margin: 0 auto;
 }
+
 .header-container{
     display: flex;
     align-items: center;
